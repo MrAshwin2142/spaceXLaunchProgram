@@ -1,0 +1,15 @@
+.main-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cards{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.heading{
+    position: fixed;
+    font-size: 20px;
+}
