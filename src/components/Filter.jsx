@@ -3,8 +3,8 @@ import './component.css'
 
 function Filter({ filterYear, filterLand, filterLaunch }) {
     const years = [2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020];
-    const Seccessful_Launch = ["true", "false"];
-    const Seccessful_Landing = ["true", "false"];
+    const Succesful_Launch = ["true", "false"];
+    const Succesful_Landing = ["true", "false"];
     const HandleYearClick = (e) => {
         const year = e.target.getAttribute('val');
         filterYear((prev_year) => (
@@ -39,7 +39,7 @@ function Filter({ filterYear, filterLand, filterLaunch }) {
                 ))}
             </div>
 
-            <p>Seccessful Launch </p>
+            <p>Succesful Launch </p>
             <div className="buttons">
                 {Succesful_Launch.map((launch) => (
                     <button
@@ -51,7 +51,7 @@ function Filter({ filterYear, filterLand, filterLaunch }) {
             </div>
             <p>Succesful Landing </p>
             <div className="buttons">
-                {Seccessful_Landing.map((land) => (
+                {Succesful_Landing.map((land) => (
                     <button
                         key={land}
                         val={land}
