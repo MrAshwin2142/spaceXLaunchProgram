@@ -39,7 +39,7 @@ function Filter({ filterYear, filterLand, filterLaunch, launch_year }) {
                 ))}
             </div>
 
-            <p>Succesful Launch </p>
+            <h3>Succesful Launch </h3>
             <div className="buttons">
                 {Succesful_Launch.map((launch) => (
                     <button
@@ -49,7 +49,7 @@ function Filter({ filterYear, filterLand, filterLaunch, launch_year }) {
                     >{launch}</button>
                 ))}
             </div>
-            <p>Succesful Landing </p>
+            <h3>Succesful Landing </h3>
             <div className="buttons">
                 {Succesful_Landing.map((land) => (
                     <button

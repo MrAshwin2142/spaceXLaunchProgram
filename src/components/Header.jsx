@@ -4,7 +4,7 @@ import './component.css'
 function Header() {
   return (
     <div className='header'>
-      SpaceX Launch Program
+      <h2>SpaceX Launch Program</h2>
     </div>
   )
 }

@@ -27,20 +27,20 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      
-        try {
-          const response = await axios.get(url, {
-            params: {
-              launch_success,
-              land_success,
-              launch_year,
-            },
-          });
-          console.log(response)
-          setData(response.data);
-        } catch (error) {
-          console.error('Error fetching data', error);
-        }
+
+      try {
+        const response = await axios.get(url, {
+          params: {
+            launch_success,
+            land_success,
+            launch_year,
+          },
+        });
+        console.log(response)
+        setData(response.data);
+      } catch (error) {
+        console.error('Error fetching data', error);
+      }
     };
 
     fetchData();
@@ -50,8 +50,8 @@ function App() {
 
   return (
     <div className='main-container' >
-        <Header/>
-      <Filter filterYear={filterYear} filterLand={filterLand} filterLaunch={filterLaunch} launch_year={launch_year}/>
+      <Header />
+      <Filter filterYear={filterYear} filterLand={filterLand} filterLaunch={filterLaunch} launch_year={launch_year} />
       <div className='cards'>
         <input placeholder='Search Launch Program...' onChange={(e) => {
           setSearch(e.target.value)
