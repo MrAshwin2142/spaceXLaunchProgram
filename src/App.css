@@ -13,3 +13,10 @@
     position: fixed;
     font-size: 20px;
 }
+input{
+    width: 80%;
+    height: 30px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
